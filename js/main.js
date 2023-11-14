@@ -41,23 +41,21 @@ function formHasBeenCompleted(event) {
     // CALCOLO PREZZO
     let price = calculateTicketPrice(distance, age);
 
+    // Parte visualizzata in HTML
+    document.getElementById("nameDisplay").innerText = `Nome: ${name}`;
+    document.getElementById("distanceDisplay").innerText = `Distanza in Km: ${distance}`;
+    document.getElementById("ageDisplay").innerText = `Età: ${age}`;
+    document.getElementById("priceDisplay").innerText = `Prezzo Finale: ${price}€`;
+
     // Stampo Dati sulla Console
     let informations = `
     --- Informazioni Utente ---
     Numero di Km: ${distance}
     Eta: ${age}
     Name: ${name}
-    Prezzo finale: ${finalCost}
-`
-
+    Prezzo finale: ${price}
+    `
     console.log(informations);
-
-
-    // Parte visualizzata in HTML
-    document.getElementById("nameDisplay").innerText = `Nome: ${name}`;
-    document.getElementById("distanceDisplay").innerText = `Distanza in Km: ${distance}`;
-    document.getElementById("ageDisplay").innerText = `Età: ${age}`;
-    document.getElementById("priceDisplay").innerText = `Prezzo Finale: ${price}€`;
 
     // Puoi fare altre operazioni qui, come nascondere il modulo e mostrare la card
     //document.getElementById("formTicket").classList.add("d-none");
