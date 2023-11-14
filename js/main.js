@@ -57,7 +57,7 @@ function formHasBeenCompleted(event) {
     `
     console.log(informations);
 
-    // Puoi fare altre operazioni qui, come nascondere il modulo e mostrare la card
+    // Nascondere il modulo e mostrare la card - BONUS PER DOPO
     //document.getElementById("formTicket").classList.add("d-none");
     //document.getElementById("Ticket").classList.remove("d-none");
 }
