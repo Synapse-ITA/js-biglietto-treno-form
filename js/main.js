@@ -3,6 +3,7 @@
 distance = parseInt(distance);
 age = parseInt(age);
 
+// Funzione
 function calculateTicketPrice(distance, age) {
     // Calcolo prezzo
     let basePricePerKm = 0.21;
@@ -15,11 +16,11 @@ function calculateTicketPrice(distance, age) {
         price *= 0.6; // 40% di sconto per gli over 65
     }
 
-    // Prezzo a due decimali
+    // Ritorno del prezzo a due decimali
     return price.toFixed(2);
 }
 
-// INIZIO FUNZIONE 
+// INIZIO FUNZIONE FORM
 
 function formHasBeenCompleted(event) {
     event.preventDefault();
@@ -28,7 +29,6 @@ function formHasBeenCompleted(event) {
     let name = document.getElementById('name').value;
     let distance = document.getElementById('distance').value;
     let age = document.getElementById('age').value;
-    // CALCOLO PREZZO
     let price = calculateTicketPrice(distance, age);
 
     // Parte visualizzata in HTML
