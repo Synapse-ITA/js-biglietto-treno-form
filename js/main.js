@@ -33,9 +33,9 @@ function formHasBeenCompleted(event) {
 
     // Parte visualizzata in HTML
     document.getElementById("nameDisplay").innerText = `Nome: ${name}`;
-    document.getElementById("distanceDisplay").innerText = `Distanza in Km: ${distance}`;
+    document.getElementById("distanceDisplay").innerText = `Distanza: ${distance}km`;
     document.getElementById("ageDisplay").innerText = `Età: ${age}`;
-    document.getElementById("priceDisplay").innerText = `Prezzo Finale: ${price}€`;
+    document.getElementById("priceDisplay").innerText = `Prezzo: ${price}€`;
 
     // Stampo Dati sulla Console
     let informations = `
