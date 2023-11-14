@@ -1,15 +1,5 @@
 // CALCOLO COSTO VIAGGIO
 
-let totalCost = distance * 0.21
-
-if (age < 18) {
-    totalCost = totalCost - totalCost * 0.2;
-} else if (age >= 65) {
-    totalCost = totalCost - totalCost * 0.4;
-}
-
-let finalCost = totalCost.toFixed(2);
-
 distance = parseInt(distance);
 age = parseInt(age);
 
